@@ -5,8 +5,10 @@ Version: 1.0
 Date: 2014-09-17
 Author: Andy Merlino
 Maintainer: Andy Merlino <merlinoa88@gmail.com>
-LazyData: true
+LazyData: yes
 Description: CAS loss data from the collected from NAIC schedule P.  The data
     was collected and cleaned by Glenn G. Meyers and Peng Shi and is freely
-    available on the CAS website.
+    available on the CAS website.  This package contains the following 6
+    datasets
+VignetteBuilder: knitr
 License: MIT
