@@ -173,3 +173,65 @@
 #' @examples
 #' ppauto
 "ppauto"
+
+#' A combination of all the losses in the data sets on the case website. 
+#' \url{http://www.casact.org/research/index.cfm?fa=loss_reserves_data}
+#' the `losses` data frame combines all six lines of business into one data frame
+#' and removes the premium and meta information columns that do not need to
+#' be recorded for every development period.
+#' 
+#' @format A data frame with 77900 observations of 8 variables
+#' \describe{
+#' \item{lob}{line of business}
+#' \item{gr_code}{NAIC company code (includes insurer groups and single insurers)}
+#' \item{gr_name}{NAIC company name (includes insurer groups and single insurers)}
+#' \item{origin}{year in which accidents occurred}
+#' \item{dev}{Years of development}
+#' \item{incurred}{Incurred losses and allocated expenses at year end}
+#' \item{paid}{cumulative paid losses and defense and cost containment expenses at year end}
+#' \item{bulk}{Bulk and IBNR reserves on net losses and defense and cost containment expenses reported 
+#' at year end}
+#' }
+#' @examples
+#' losses
+"losses"
+
+#' A combination of all the premium in the data sets on the case website. 
+#' \url{http://www.casact.org/research/index.cfm?fa=loss_reserves_data}
+#' the `premium` data frame combines all six lines of business into one data frame
+#' and removes the losses and meta information columns that are not recorded on a
+#' origin year basis.
+#' 
+#' @format A data frame with 7790 observations of 7 variables
+#' \describe{
+#' \item{lob}{Line of Business}
+#' \item{gr_code}{NAIC company code (includes insurer groups and single insurers)}
+#' \item{gr_name}{NAIC company name (includes insurer groups and single insurers)}
+#' \item{origin}{year in which accidents occurred}
+#' \item{premium_earned}{direct and assumed premiums earned at incurral year}
+#' \item{premium_ceded}{ceded premiums earned at incurral year}
+#' \item{premium_net}{net premiums earned at incurral year}
+#' }
+#' @examples
+#' premium
+"premium"
+
+#' A combination of all the premium in the data sets on the case website. 
+#' \url{http://www.casact.org/research/index.cfm?fa=loss_reserves_data}
+#' the `reserves` data frame combines all six lines of business into one data frame
+#' and removes the losses and premium information columns that are not recorded on a
+#' company basis.
+#' 
+#' @format A data frame with 7790 observations of 7 variables
+#' \describe{
+#' \item{lob}{Line of Business}
+#' \item{gr_code}{NAIC company code (includes insurer groups and single insurers)}
+#' \item{gr_name}{NAIC company name (includes insurer groups and single insurers)}
+#' \item{single}{factor for determining if entity is a single insurer (1) or a group insurer (0)}
+#' \item{reserve_1997}{posted reserves in year 1997 taken from the Underwriting and Investment Exhibit - 
+#' Part 2A, including net losses unpaid and unpaid loss adjustment expense}
+#' }
+#'
+#' @examples
+#' reserves
+"reserves"
