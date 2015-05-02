@@ -1,14 +1,13 @@
 Package: casdata
-Type: Package
 Title: loss data available on CAS website
 Version: 1.0
 Date: 2014-09-17
-Author: Andy Merlino
-Maintainer: Andy Merlino <merlinoa88@gmail.com>
-LazyData: yes
+Authors@R: person("Andy", "Merlino", email = "merlinoa88@gmail.com", role = c("aut", "cre"))
+LazyData: true
 Description: CAS loss data from the collected from NAIC schedule P.  The data
     was collected and cleaned by Glenn G. Meyers and Peng Shi and is freely
-    available on the CAS website.  This package contains the following 6
-    datasets
+    available on the CAS website.
+Depends: R (>= 3.1.0)
+URL: http://www.casact.org/research/index.cfm?fa=loss_reserves_data
 VignetteBuilder: knitr
 License: MIT
