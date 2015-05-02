@@ -4,7 +4,7 @@ Version: 1.0
 Date: 2014-09-17
 Authors@R: person("Andy", "Merlino", email = "merlinoa88@gmail.com", role = c("aut", "cre"))
 LazyData: true
-Description: CAS loss data from the collected from NAIC schedule P.  The data
+Description: CAS data on insurance losses collected from NAIC schedule P.  The data
     was collected and cleaned by Glenn G. Meyers and Peng Shi and is freely
     available on the CAS website.
 Depends: R (>= 3.1.0)
