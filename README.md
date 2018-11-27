@@ -5,9 +5,18 @@ An R package containing and documenting the insurance loss data sets available o
 
 Download the package using:
 ```r
-devtools::install_github("merlinoa/casdata")
+remotes::install_github("Ractuary/casdata")
 ```
 And run the following code to see the included datasets:
 ```r
 help(package = "casdata")
+```
+
+Once the package is loaded, the data is accessible from your R session. e.g.
+
+```r
+library(casdata)
+
+# print the "comauto" data frame
+comauto
 ```
